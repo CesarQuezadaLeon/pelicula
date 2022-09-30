@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "bf646af1-f9da-42b9-b95f-58cebbf535c2",
+		"name": "Peliculas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23608027"
+	},
+	"item": [
+		{
+			"name": "Consulta",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"nombre\": \"SHARK\",\r\n    \"imagen\": \"https://resizing.flixster.com/0iwtsVtU1jxOaq0X2VEXuAxuTjw=/fit-in/180x240/v2/https://flxt.tmsimg.com/assets/p8174_p_v8_ai.jpg\",\r\n    \"duracion\": \"2:00hrs \",\r\n    \"clasificacion\":\"R\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/pelicula",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pelicula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Elimiar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/pelicula/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"pelicula",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
